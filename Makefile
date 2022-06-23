@@ -1,7 +1,7 @@
 install:
 	echo "Setting up kind"
-	kind create cluster --name webFocus \
-		--config kind-cluster.yml
+	kind create cluster --name webfocus \
+		--config kind-cluster.yaml
 lb:
 	echo "Setting up kind with metallb"
 	metallb/metallb.sh
